@@ -14,10 +14,8 @@ console.log(myCard.suit);
 // var getImage = {};
 // getImage.push(Card);
 
-Card.prototype.getImage = function(url){
+Card.prototype.getImage = function(){
     return('cards/' + this.point + '_of_' + this.suit + '.png');
 }
 
-myCard.getImage(card);
-
-
+console.log(myCard.getImage(myCard));
